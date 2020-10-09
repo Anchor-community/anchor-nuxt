@@ -1,0 +1,32 @@
+body,
+html {
+  margin: 0;
+}
+
+*:not(.material-icons) {
+  text-transform: capitalize;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: unset;
+}
+
+ul {
+  padding: unset;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
