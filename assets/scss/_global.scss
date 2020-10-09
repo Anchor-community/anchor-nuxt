@@ -1,6 +1,7 @@
 body,
 html {
   margin: 0;
+  background-color: $color-pureblack;
 }
 
 *:not(.material-icons) {
@@ -20,13 +21,34 @@ h5,
 h6,
 p {
   margin: unset;
+  color: $color-white;
 }
 
 ul {
   padding: unset;
   list-style: none;
+  color: $color-white;
+
+  li {
+    &::before{
+      content: '-';
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
 }
 
 a {
   text-decoration: none;
+  color: $color-white;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
 }

@@ -21,7 +21,7 @@ export default class IndexPage extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .top {
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;

@@ -1,12 +1,18 @@
 <template lang="pug">
-div
+.container
   nuxt
+  global-animator
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import GlobalAnimator from '~/components/GlobalAnimator.vue'
 
-@Component({})
+@Component({
+  components: {
+    GlobalAnimator,
+  },
+})
 export default class DefaultLayout extends Vue {
   mounted() {
     let vh = window.innerHeight * 0.01
@@ -20,3 +26,9 @@ export default class DefaultLayout extends Vue {
   }
 }
 </script>
+
+<style lang="scss">
+.container {
+  background-color: $color-pureblack;
+}
+</style>
