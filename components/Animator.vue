@@ -6,8 +6,8 @@
   transition(name="panel")
     .animator__panel-4(v-if="!isCompleted")
   transition(name="panel")
-  .animator__content(:class="{'shown': isCompleted}")
-    slot
+    .animator__content(:class="{'shown': isCompleted}")
+      slot
 </template>
 
 <script lang="ts">
@@ -129,5 +129,6 @@ export default class Animator extends Vue {
 .panel-enter,
 .panel-leave-active {
   opacity: 0;
+  pointer-events: none;
 }
 </style>
