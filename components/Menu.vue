@@ -13,24 +13,14 @@ transition(name="intro")
           span Rule
 
       Animator(:delay="0.2")
-        .menu__items__link(@click="transitionWithAnimation('foo')")
-          i.material-icons groups
-          span Member
-
-      Animator(:delay="0.3")
-        .menu__items__link(@click="transitionWithAnimation('foo')")
-          i.material-icons construction
-          span Creation
-
-      Animator(:delay="0.4")
-        a.menu__items__link(href="https://discord.gg/PBR8twj" target="_blank")
-          i.material-icons person_add
-          span Join
-
-      Animator(:delay="0.5")
-        .menu__items__link(@click="transitionWithAnimation('foo')")
+        .menu__items__link(@click="transitionWithAnimation('bot')")
           i.material-icons security
           span Bot
+
+      Animator(:delay="0.3")
+        a.menu__items__link(href="https://discord.gg/3d8V6jqZWH" target="_blank")
+          i.material-icons person_add
+          span Join
 </template>
 
 <script lang="ts">
@@ -71,7 +61,7 @@ export default class Intro extends Vue {
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 
     @media screen and (max-width: $width-tablet-small) {
